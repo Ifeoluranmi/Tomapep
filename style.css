@@ -94,33 +94,60 @@ h3 {
 
 .pricing {
     border: 3px dashed black;
-    height: ;
     width: 100%;
     display: flex;
+    justify-content: center;
+    
 }
 
 .img-pdt {
     width: 582px;
     height: 326px;
-    margin: 0;
+    margin: 0 0px;
     
 }
 
 #img-pdt {
     border: 1px solid red;
-    margin: 0 50px;
-    padding: 20px 150px;
+    margin: 0 100px;
+    padding: 20px 10px;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
 }
 
 #pdct-details {
     text-align: center;
     padding: 50px 0 0;
+    border: 3px solid green;
 }
 
 #pdct-details > h3 {
     padding: 10px;
     margin: 200px;
     border: 1px solid red;
+}
+
+.process {
+    width: 100%;
+    display: flex;
+    border: 2px solid brown;
+
+}
+
+#process-details {
+    text-align: center;
+    padding: 50px 0 0;
+    border: 3px solid green;
+}
+
+#img-process {
+    border: 1px solid red;
+    margin: 0 100px;
+    padding: 20px 10px;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
 }
 
 h1 {
