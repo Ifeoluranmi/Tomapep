@@ -101,10 +101,9 @@ h3 {
 }
 
 .img-pdt {
-    width: 582px;
-    height: 326px;
-    margin: 0 0px;
-    
+    width: 900px;
+    height: 540px;
+    margin: 0 0px; 
 }
 
 #img-pdt {
@@ -143,11 +142,22 @@ h3 {
 
 #img-process {
     border: 1px solid red;
-    margin: 0 100px;
+    margin: 0 auto;
     padding: 20px 10px;
     display: flex;
     gap: 10px;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-process {
+    width: 800px;
+    height: 460px;
+    margin: 0 0px; 
+    object-fit: cover;
+    max-width: 100%;
 }
 
 h1 {
