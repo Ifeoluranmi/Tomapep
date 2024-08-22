@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="mediascreen.css">
     <link rel="icon" type="image/x-icon" href="img/product_icon.png">
     <title>Tomapep</title>
 </head>
@@ -12,10 +13,14 @@
         <header>
             <img id="logo" src="img/product_icon2.png" alt="logo">
             <nav id="bar">
-                <a href="#">Home</a>
-                <a href="#">Contact</a>
-                <a href="#">Pricing</a>
-                <a href="https://wa.me/09161136111?text=Hi%20Beacon,%20i%20will%20like%20to%20place%20an%20order%20of%20your%20Tomapep" target="_blank" id="order">Order Now</a>
+                <div id="mySidepanel" class="sidepanel">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="#">Home</a>
+                    <a href="#">Contact</a>
+                    <a href="#">Pricing</a>
+                    <a href="https://wa.me/09161136111?text=Hi%20Beacon,%20i%20will%20like%20to%20place%20an%20order%20of%20your%20Tomapep" target="_blank" id="order">Order Now</a>
+                </div>
+                <button class="openbtn" onclick="openNav()">&#9776;</button> 
             </nav>
         </header>
 
@@ -41,7 +46,7 @@
             </div>
 
             <div id="pdct-details">
-                <h5>Discover TOMAPEP: Freshness in Every Spoonful</h5>
+                <h5>Discover TOMAPEP <span>Freshness in Every Spoonful</span></h5>
                 <p>
                     Introducing BEACON TOMAPEP, where nature's finest tomatoes are transformed into the freshest and most delicious tomato paste you'll ever taste. We believe in delivering nothing but the best, and that starts with our commitment to quality and purity from farm to table.
                 </p>
@@ -76,32 +81,60 @@
 
 
 
-        <h1>Users Review</h1>
+        <h1 id="user-feed">What Users Say About Our Product</h1>
         <section class="feedbacks">
             
-            <div class="testimonials">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur aperiam placeat iure repellendus veritatis blanditiis tempore consectetur. Laborum optio reprehenderit aliquam dolorem aliquid fugiat ratione eius, libero, omnis sit ipsam?</p>
-                <h4>Customer Details</h4>
+            <div class="testimonials-slideshow">
+                <div class="testimonials">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur aperiam placeat iure repellendus veritatis blanditiis tempore consectetur. Laborum optio reprehenderit aliquam dolorem aliquid fugiat ratione eius, libero, omnis sit ipsam?</p>
+                    <h4>Customer Details</h4>
+                </div>
+                <div class="testimonials">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur aperiam placeat iure repellendus veritatis blanditiis tempore consectetur. Laborum optio reprehenderit aliquam dolorem aliquid fugiat ratione eius, libero, omnis sit ipsam?</p>
+                    <h4>Customer Details</h4>
+                </div>
+    
+                <div class="testimonials">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit tempore cum iure rem quia repellat vero hic? Optio animi eaque quia nulla corrupti. Quasi ea, veniam corrupti repudiandae minima inventore?</p>
+                    <h4>Customer Details</h4>
+                </div>
+                <div class="testimonials">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur aperiam placeat iure repellendus veritatis blanditiis tempore consectetur. Laborum optio reprehenderit aliquam dolorem aliquid fugiat ratione eius, libero, omnis sit ipsam?</p>
+                    <h4>Customer Details</h4>
+                </div>
 
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur aperiam placeat iure repellendus veritatis blanditiis tempore consectetur. Laborum optio reprehenderit aliquam dolorem aliquid fugiat ratione eius, libero, omnis sit ipsam?</p>
-                <h4>Customer Details</h4>
             </div>
-
-            <div class="testimonials">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit tempore cum iure rem quia repellat vero hic? Optio animi eaque quia nulla corrupti. Quasi ea, veniam corrupti repudiandae minima inventore?</p>
-                <h4>Customer Details</h4>
-
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur aperiam placeat iure repellendus veritatis blanditiis tempore consectetur. Laborum optio reprehenderit aliquam dolorem aliquid fugiat ratione eius, libero, omnis sit ipsam?</p>
-                <h4>Customer Details</h4>
+            <!-- Navigation dots -->
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span> 
             </div>
         </section>
 
-        <footer>
-            <address></address>
-            <nav>
+        <section class="location">
+            <h1>Delivery Available Nationwide</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, explicabo quasi. Quibusdam facere debitis perspiciatis a suscipit mollitia quasi ea iure reiciendis, quos culpa doloremque! A harum quos accusamus assumenda.</p>
+            <h3><a href="https://wa.me/" target="_blank">Join the Community Now</a></h3>
+        </section>
 
-            </nav>
+        <footer>
+            <div class="details">
+                <address>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam labore earum odit. Corporis, odio quidem. Ab ad delectus ea, soluta maiores exercitationem at provident neque ipsa, iste facere illo mollitia.</address>
+                <nav>
+                    <a href="#">Home</a>
+                    <a href="#">Contact</a>
+                    <a href="#">Pricing</a>
+                    <a href="#">Community</a>
+                </nav>
+            </div>
+            <div class="copyright">
+                <span>All rights reserved &copy; Tomapep</span>
+                <span>Design By WillFix</span>
+            </div>
         </footer>
     </main>
+    <script src="style.js"></script>
 </body>
 </html>
