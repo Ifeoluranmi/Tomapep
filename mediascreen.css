@@ -35,11 +35,10 @@ header > img {
 }
 
 #order {
-    border: 3px solid white;
-    border-radius: 10px;
+    border: 2px solid white;
     padding: 5px 10px;
-    background-color: green;
-    color: royalblue;
+    background-color: red;
+    color: white;
     margin: 0 20px;
 }
 
@@ -286,6 +285,9 @@ h3 > a :hover {
 footer {
     width: 100%;
     background-color: gainsboro;
+    display: flex;
+    gap: 5px;
+    align-items: center;
 }
 
 .details {
@@ -376,16 +378,15 @@ address {
     }
     
     #bar a:hover {
-        color: aquamarine;
-        text-decoration: underline;
+        color: greenyellow;
+        text-decoration: burlywood;
     }
     
     #order {
-        border: 3px solid white;
-        border-radius: 10px;
+        border: 2px solid white;
         padding: 5px 15px;
-        background-color: green;
-        color: royalblue;
+        background-color: red;
+        color: white;
     }
 
     /*Hero section begins here*/
