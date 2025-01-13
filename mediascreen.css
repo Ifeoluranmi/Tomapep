@@ -471,6 +471,18 @@ address {
         height: 200px;
     }
 
+    /*Location section begins here*/
+    #locate {
+        text-align: justify;
+        padding: 10px 20px;
+    }
+
+    #locate > h3 {
+        width: ;
+        margin: 10px 50px;
+        text-align: center;
+        font-size: ;
+    }
 }
 
 /* The sidepanel menu */
