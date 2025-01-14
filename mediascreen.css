@@ -40,6 +40,7 @@ header > img {
     background-color: red;
     color: white;
     margin: 0 20px;
+    cursor: pointer;
 }
 
 
@@ -100,17 +101,18 @@ h3 {
     margin: 15px 60px;
     padding: 5px;
     border-radius: 5px;
-    font-size: 15px;
+    font-size: 50%;
     background-color: green;
 }
 
 h3 > a {
     color: white;
     text-decoration: none;
+    cursor: pointer;
 }
 
-h3 > a :hover {
-    text-decoration: orangered;
+h3 > a:hover {
+    cursor: pointer;
 }
 
 
@@ -378,6 +380,7 @@ address {
     a {
         all: unset;
         color: white;
+        cursor: pointer;
     }
     
     #bar a:hover {
@@ -480,6 +483,26 @@ address {
         margin: 10px 50px;
         text-align: center;
     }
+}
+
+@media only screen and (min-width: 1024px) {
+    .caption {
+        color: white;
+        text-align: center;
+        padding: 30px;
+        font-size: 40px;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .caption > p {
+        font-size: 20px;
+    }
+
+    #showcase {
+      padding-right: 30px;
+    }
+    
 }
 
 /* The sidepanel menu */
