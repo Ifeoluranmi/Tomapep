@@ -443,7 +443,6 @@ address {
     }
 
     #pdct-details > h3 {
-        padding: ;
         margin: 20px;
         border: 2px solid white;
         background-color: green;
@@ -478,10 +477,8 @@ address {
     }
 
     #locate > h3 {
-        width: ;
         margin: 10px 50px;
         text-align: center;
-        font-size: ;
     }
 }
 
